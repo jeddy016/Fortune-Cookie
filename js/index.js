@@ -7,7 +7,7 @@ $(document).ready(function() {
       success: function(data) {
         var fort = JSON.stringify(data[0].fortune.message);
 //Only return fortunes short enough for Tweet//
-        fort.length <= 125 ? $('.header').text(fort).addClass('fortune') :
+        fort.length <= 125 ? $('.header').text(fort) :
           getFortune();
       }
     })
