@@ -1,6 +1,5 @@
 
 var fortunes = [];
-
 function getFortune() {
   $.ajax({
       url: 'https://fortunecookieapi.herokuapp.com/v1/fortunes',
@@ -10,7 +9,6 @@ function getFortune() {
     }
   })
 }
-
 function postTweet() {
 //Format fortune for URL
     var preFill = $('.header').text()
@@ -19,8 +17,6 @@ function postTweet() {
 //Insert into URL
     $('.twit').attr('href', 'https://twitter.com/intent/tweet?text=My%20FortuneCookie%20fortune%20is%3A%20' + '%22' + preFill + '%22');
   };  
-
-
 $(document).ready(function() {
   getFortune()
   $('.btn').click(function() {
