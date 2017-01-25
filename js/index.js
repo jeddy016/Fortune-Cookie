@@ -17,7 +17,7 @@ function postTweet() {
       .replace(/["/.]/g, "")
       .replace(/\s/g, "%20");
 //Insert into URL
-    $('.tweet').attr('href', 'https://twitter.com/intent/tweet?text=My%20FortuneCookie%20fortune%20is%3A%20' + '%22' + preFill + '%22');
+    $('.twit').attr('href', 'https://twitter.com/intent/tweet?text=My%20FortuneCookie%20fortune%20is%3A%20' + '%22' + preFill + '%22');
   };  
 
 
