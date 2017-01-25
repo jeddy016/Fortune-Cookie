@@ -3,7 +3,7 @@ var fortunes = [];
 
 function getFortune() {
   $.ajax({
-      url: 'http://fortunecookieapi.herokuapp.com/v1/fortunes',
+      url: 'https://fortunecookieapi.herokuapp.com/v1/fortunes',
       cache: false,
       success: function(data) {
         fortunes.push(data);
