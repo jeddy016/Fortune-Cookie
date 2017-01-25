@@ -45,10 +45,10 @@ body {
   outline: 0;
 }
 
-.tweet, 
-.tweet:hover, 
-.tweet:visited, 
-.tweet:focus {
+.twit, 
+.twit:hover, 
+.twit:visited, 
+.twit:focus {
   display: inline-block;
   color: white;
   text-decoration: none;
