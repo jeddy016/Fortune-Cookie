@@ -6,6 +6,9 @@ function getFortune() {
       cache: false,
       success: function(data) {
         fortunes.push(data);
+        $('.loadingText').hide();
+        $('.btn').css('opacity', '100');
+        $('.tweet').css('opacity', '100');
     }
   })
 }
